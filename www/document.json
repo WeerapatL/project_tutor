@@ -1,0 +1,209 @@
+// {
+//   "Branchs": [
+//     {
+//       "branchName":"Siam",
+//       "seat":30,
+//       "Subjects":[{
+//           "subjectName":"Math",
+//           "course":
+//           [
+//             {
+//                 "courseName":"Entrance",
+//                 "amountHours":100,
+//                 "round":{
+//                     "time":["10.00","11.00","12.00"]
+//                 }
+//             },
+//             {
+//                 "courseName":"Entrance",
+//                 "amountHours":100,
+//                 "round":{
+//                     "time":["10.00","11.00","12.00"]
+//                 }
+//             }
+//           ]
+//       },{
+//           "subjectName":"Math",
+//           "course":[{
+//               "courseName":"Entrance",
+//               "amountHours":100,
+//               "round":{
+//                   "time":["10.00","11.00","12.00"]
+//               }
+//             },{
+//               "courseName":"Entrance",
+//               "amountHours":100,
+//               "round":{
+//                   "time":["10.00","11.00","12.00"]
+//               }
+//             }
+//           ]
+//       }]
+//     },
+//      {
+//       "branchName":"Siam",
+//       "seat":30,
+//       "subjects":[{
+//           "subjectName":"Math",
+//           "course":[{
+//               "courseName":"Entrance",
+//               "amountHours":100,
+//               "round":{
+//                   "time":["10.00","11.00","12.00"]
+//               }
+//             },{
+//               "courseName":"Entrance",
+//               "amountHours":100,
+//               "round":{
+//                   "time":["10.00","11.00","12.00"]
+//               }
+//             }
+//           ]
+//       },{
+//           "subjectName":"Math",
+//           "course":[{
+//               "courseName":"Entrance",
+//               "amountHours":100,
+//               "round":{
+//                   "time":["10.00","11.00","12.00"]
+//               }
+//             },{
+//               "courseName":"Entrance",
+//               "amountHours":100,
+//               "round":{
+//                   "time":["10.00","11.00","12.00"]
+//               }
+//             }
+//           ]
+//       }]
+//     }
+    
+//   ]
+// }
+
+
+
+
+    
+
+
+// -----------------------------------------------------------------------------
+// {
+//       branchName: "Siam",
+//       seat: 30,
+//       Subjects: [
+//         {
+//           subjectName: "Math",
+//           course: [{
+//               courseName: "Entrance",
+//               amountHours: 100,
+//               round: {
+//               time: [
+//                             "10.00",
+//                             "11.00",
+//                             "12.00"
+//                         ]
+//                     }
+//                 },
+//                 {
+//               courseName: "Entrance",
+//               amountHours: 100,
+//               round: {
+//                 time: [
+//                             "10.00",
+//                             "11.00",
+//                             "12.00"
+//                         ]
+//                     }
+//                 }
+//             ]
+//         },
+//         {
+//           subjectName: "Math",
+//           course: [
+//                 {
+//               courseName: "Entrance",
+//               amountHours: 100,
+//               round: {
+//                 time: [
+//                             "10.00",
+//                             "11.00",
+//                             "12.00"
+//                         ]
+//                     }
+//                 },
+//                 {
+//               courseName: "Entrance",
+//               amountHours: 100,
+//               round: {
+//                 time: [
+//                             "10.00",
+//                             "11.00",
+//                             "12.00"
+//                         ]
+//                     }
+//                 }
+//             ]
+//         }
+//     ]
+// },
+// {
+//         branchName: "Siam",
+//         seat: 30,
+//         subjects: [
+//         {
+//             subjectName: "Math",
+//             course: [
+//                 {
+//                 courseName: "Entrance",
+//                 amountHours: 100,
+//                 round: {
+//                   time: [
+//                             "10.00",
+//                             "11.00",
+//                             "12.00"
+//                         ]
+//                     }
+//                 },
+//                 {
+//                 courseName: "Entrance",
+//                 amountHours: 100,
+//                 round: {
+//                   time: [
+//                             "10.00",
+//                             "11.00",
+//                             "12.00"
+//                         ]
+//                     }
+//                 }
+//             ]
+//         },
+//         {
+//             subjectName: "Math",
+//             course: [
+//                 {
+//                 courseName: "Entrance",
+//                 amountHours: 100,
+//                 round: {
+//                   time: [
+//                             "10.00",
+//                             "11.00",
+//                             "12.00"
+//                         ]
+//                     }
+//                 },
+//                 {
+//                 courseName: "Entrance",
+//                 amountHours: 100,
+//                 round: {
+//                   time: [
+//                             "10.00",
+//                             "11.00",
+//                             "12.00"
+//                         ]
+//                     }
+//                 }
+//             ]
+//         }
+//     ]
+// }
