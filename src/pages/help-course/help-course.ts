@@ -15,13 +15,13 @@ import { NavController, NavParams, ViewController } from 'ionic-angular';
 export class HelpCoursePage {
   slides = [
     {
-      image: "/assets/imgs/subject1.png",
+      image: "subject1.png",
     }, 
     {
-      image: "/assets/imgs/subject2.png",
+      image: "subject2.png",
     },
     {
-      image: "/assets/imgs/subject3.png",
+      image: "subject3.png",
     },
   ]
   constructor(public navCtrl: NavController,

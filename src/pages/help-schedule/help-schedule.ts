@@ -15,19 +15,19 @@ import { NavController, NavParams, ViewController } from 'ionic-angular';
 export class HelpSchedulePage {
   slides = [
     {
-      image: "/assets/imgs/schedule1.png",
+      image: "schedule1.png",
     },
     {
-      image: "/assets/imgs/schedule2.png",
+      image: "schedule2.png",
     },
     {
-      image: "/assets/imgs/schedule3.png",
+      image: "schedule3.png",
     },
     {
-      image: "/assets/imgs/schedule4.png",
+      image: "schedule4.png",
     },
     {
-      image: "/assets/imgs/schedule5.png",
+      image: "schedule5.png",
     }
   ]
 

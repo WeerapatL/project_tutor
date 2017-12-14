@@ -15,13 +15,13 @@ import { NavController, NavParams, ViewController } from 'ionic-angular';
 export class HetlpPaymentPage {
   slides = [
     {
-      image: "/assets/imgs/payment1.png",
+      image: "payment1.png",
     },
     {
-      image: "/assets/imgs/payment2.png",
+      image: "payment2.png",
     },
     {
-      image: "/assets/imgs/payment3.png",
+      image: "payment3.png",
     },
   ]
 

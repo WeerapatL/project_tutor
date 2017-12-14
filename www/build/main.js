@@ -988,13 +988,13 @@ var HelpCoursePage = (function () {
         this.viewCtrl = viewCtrl;
         this.slides = [
             {
-                image: "/assets/imgs/subject1.png",
+                image: "subject1.png",
             },
             {
-                image: "/assets/imgs/subject2.png",
+                image: "subject2.png",
             },
             {
-                image: "/assets/imgs/subject3.png",
+                image: "subject3.png",
             },
         ];
     }
@@ -1008,11 +1008,10 @@ var HelpCoursePage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-help-course',template:/*ion-inline-start:"/Users/weerapat/tutor_project/src/pages/help-course/help-course.html"*/'<!--\n  Generated template for the HelpCoursePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-content padding>\n  <ion-slides pager>\n    <ion-slide *ngFor="let img of slides">\n      <ion-toolbar color="white">\n        <ion-buttons end>\n          <button ion-button color="primary" (click)="close()">ข้าม</button>\n        </ion-buttons>\n      </ion-toolbar>\n      <img [src]="img.image"/>\n    </ion-slide>\n  </ion-slides>\n</ion-content>'/*ion-inline-end:"/Users/weerapat/tutor_project/src/pages/help-course/help-course.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]) === "function" && _c || Object])
     ], HelpCoursePage);
     return HelpCoursePage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=help-course.js.map
@@ -1896,19 +1895,19 @@ var HelpSchedulePage = (function () {
         this.viewCtrl = viewCtrl;
         this.slides = [
             {
-                image: "/assets/imgs/schedule1.png",
+                image: "schedule1.png",
             },
             {
-                image: "/assets/imgs/schedule2.png",
+                image: "schedule2.png",
             },
             {
-                image: "/assets/imgs/schedule3.png",
+                image: "schedule3.png",
             },
             {
-                image: "/assets/imgs/schedule4.png",
+                image: "schedule4.png",
             },
             {
-                image: "/assets/imgs/schedule5.png",
+                image: "schedule5.png",
             }
         ];
     }
@@ -1922,11 +1921,10 @@ var HelpSchedulePage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-help-schedule',template:/*ion-inline-start:"/Users/weerapat/tutor_project/src/pages/help-schedule/help-schedule.html"*/'<!--\n  Generated template for the HelpSchedulePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-content padding>\n  <ion-slides pager>\n    <ion-slide *ngFor="let img of slides">\n      <ion-toolbar color="white">\n        <ion-buttons end>\n          <button ion-button color="primary" (click)="close()">ข้าม</button>\n        </ion-buttons>\n      </ion-toolbar>\n      <img [src]="img.image" />\n    </ion-slide>\n  </ion-slides>\n</ion-content>\n'/*ion-inline-end:"/Users/weerapat/tutor_project/src/pages/help-schedule/help-schedule.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]) === "function" && _c || Object])
     ], HelpSchedulePage);
     return HelpSchedulePage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=help-schedule.js.map
@@ -2198,13 +2196,13 @@ var HetlpPaymentPage = (function () {
         this.viewCtrl = viewCtrl;
         this.slides = [
             {
-                image: "/assets/imgs/payment1.png",
+                image: "payment1.png",
             },
             {
-                image: "/assets/imgs/payment2.png",
+                image: "payment2.png",
             },
             {
-                image: "/assets/imgs/payment3.png",
+                image: "payment3.png",
             },
         ];
     }
@@ -2218,9 +2216,10 @@ var HetlpPaymentPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-hetlp-payment',template:/*ion-inline-start:"/Users/weerapat/tutor_project/src/pages/hetlp-payment/hetlp-payment.html"*/'<!--\n  Generated template for the HetlpPaymentPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-content padding>\n  <ion-slides pager>\n    <ion-slide *ngFor="let img of slides">\n      <ion-toolbar color="white">\n        <ion-buttons end>\n          <button ion-button color="primary" (click)="close()">ข้าม</button>\n        </ion-buttons>\n      </ion-toolbar>\n      <img [src]="img.image" />\n    </ion-slide>\n  </ion-slides>\n</ion-content>\n'/*ion-inline-end:"/Users/weerapat/tutor_project/src/pages/hetlp-payment/hetlp-payment.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]) === "function" && _c || Object])
     ], HetlpPaymentPage);
     return HetlpPaymentPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=hetlp-payment.js.map
