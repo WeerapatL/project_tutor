@@ -1,0 +1,40 @@
+page-subject {
+    // .button-full-ios {
+    //     margin-left: 0;
+    //     margin-right: 0;
+    //     border-radius: 10px;
+    //     border-right-width: 0;
+    //     border-left-width: 0;
+    //     // opacity: 0.9;
+    // }
+    .icon{
+        width: 35px;
+        margin-right: 15px;
+    }
+
+    button{
+        text-align: center;
+        width: 90%;
+    }
+
+    .button-ios {
+        font-size: 1.8rem;
+        color: #fff;
+        background-color: rgb(48, 84, 184);
+        margin-top: 0.1rem;
+        padding: 1px;
+        box-shadow: 0 5px 5px 3px rgba(50,50,50,.4);
+        
+    }
+
+    .button-md {
+        margin-top: 10px;
+        height: 5rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: rgb(48, 84, 184);
+        box-shadow: 0 5px 5px 3px rgba(50,50,50,.4);
+    }
+}

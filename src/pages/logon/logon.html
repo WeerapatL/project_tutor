@@ -1,0 +1,38 @@
+<!--
+  Generated template for the LogonPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="school">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>เข้าสู่ระบบ</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content text-center padding>
+  <form [formGroup]="authForm" (ngSubmit)="onSubmit(authForm.value)">
+    <ion-item no-lines class="padding" full outline [ngClass]="{'error-border':!authForm.controls.username.valid && authForm.controls.username.touched}">
+      <ion-icon name="person" item-start></ion-icon>
+      <ion-input class="padding" formControlName="username" type="text" placeholder="     ชื่อผู้ใช้"></ion-input>
+    </ion-item>
+    <p *ngIf="authForm.controls.username.hasError('required') && authForm.controls.username.touched">จำเป็นต้องกรอกชื่อผู้ใช้</p>
+    <p *ngIf="authForm.controls.username.hasError('pattern') && authForm.controls.username.touched">เฉพาะตัวอักษร และ ตัวเลขเท่านั้น!</p>
+    <p *ngIf="authForm.controls.username.hasError('minlength') && authForm.controls.username.touched">ชื่อผู้ใช้อย่างน้อย 6 ตัว!</p>
+    <p *ngIf="authForm.controls.username.hasError('maxlength') && authForm.controls.username.touched">ชื่อผู้ใช้อย่างน้อย 20 ตัว!</p>
+
+    <ion-item no-lines class="padding" full outline [ngClass]="{'error-border':!authForm.controls.password.valid && authForm.controls.password.touched}">
+      <ion-icon name="lock" item-start></ion-icon>
+      <ion-input class="padding" formControlName="password" type="password" placeholder="     รหัสผ่าน"></ion-input>
+    </ion-item>
+    <p *ngIf="authForm.controls.password.hasError('required') && authForm.controls.password.touched">จำเป็นต้องกรอกรหัสผ่าน!</p>
+    <p *ngIf="authForm.controls.password.hasError('minlength') && authForm.controls.password.touched">รหัสผ่านอย่างน้อย 6 ตัว!</p>
+
+    <button ion-button round class="login" [disabled]="!authForm.valid" type="submit">เข้าสู่ระบบ</button>
+  </form>
+</ion-content>

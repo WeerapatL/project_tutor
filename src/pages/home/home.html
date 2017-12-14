@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar hideBackButton >
+    <!-- <label class="save" (click)="save()">SAVE</label> -->
+<br>
+<div *ngFor="let student of studentName | async">
+    <div class="username" text-center>
+        ยินดีต้อนรับ &nbsp; {{student.fname}}
+    </div>
+
+    <ion-avatar text-center style="margin-top:20px;">
+      <img class="img-circle" src="{{student.photo}}" />
+    </ion-avatar>
+  </div>
+    <div text-center>
+      <button class="buttonchange" ion-button round small (click)="editPhoto()">
+        <div class="change">
+          เปลี่ยนรูปประจำตัว
+        </div>
+      </button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content text-center>
+  <form [formGroup]="authForm" (ngSubmit)="onSubmit(authForm.value)">
+    <ion-list>
+      <ion-item [ngClass]="{'error-border':!authForm.controls.firstname.valid && authForm.controls.firstname.touched}">
+        <ion-label fixed class='fixedLabel'>
+          ชื่อจริง
+        </ion-label>
+        <ion-input formControlName="firstname" type="text" value="{{student.fname}}" [(ngModel)]="updateStudent.fname"></ion-input>
+      </ion-item>
+      <p *ngIf="authForm.controls.firstname.hasError('required') && authForm.controls.firstname.touched">จำเป็นต้องกรอกชื่อจริง!</p>
+      <p *ngIf="authForm.controls.firstname.hasError('pattern') && authForm.controls.firstname.touched">เฉพาะตัวอักษรภาษาอังกฤษเท่านั้น!</p>
+
+
+      <ion-item [ngClass]="{'error-border':!authForm.controls.lastname.valid && authForm.controls.lastname.touched}">
+        <ion-label fixed class='fixedLabel'>
+          นามสกุล
+        </ion-label>
+        <ion-input formControlName="lastname" type="text" value="{{student.lname}}" [(ngModel)]="updateStudent.lname"></ion-input>
+      </ion-item>
+      <p *ngIf="authForm.controls.lastname.hasError('required') && authForm.controls.lastname.touched">จำเป็นต้องกรอกนามสกุล!</p>
+      <p *ngIf="authForm.controls.lastname.hasError('pattern') && authForm.controls.lastname.touched">เฉพาะตัวอักษรภาษาอังกฤษเท่านั้น!</p>
+
+
+      <ion-item [ngClass]="{'error-border':!authForm.controls.email.valid && authForm.controls.email.touched}">
+        <ion-label fixed class='fixedLabel'>
+          Email
+        </ion-label>
+        <ion-input formControlName="email" type="text" value="{{student.email}}" [(ngModel)]="updateStudent.email"></ion-input>
+      </ion-item>
+      <p *ngIf="authForm.controls.email.hasError('required') && authForm.controls.email.touched">จำเป็นต้องกรอก Email!</p>
+      <p *ngIf="authForm.controls.email.hasError('pattern') && authForm.controls.email.touched">ตัวอย่าง: john@doe.com</p>
+
+
+      <ion-item [ngClass]="{'error-border':!authForm.controls.tel.valid && authForm.controls.tel.touched}">
+        <ion-label fixed class='fixedLabel'>
+          โทร
+        </ion-label>
+        <ion-input formControlName="tel" type="text" value="{{student.tel}}" [(ngModel)]="updateStudent.tel"></ion-input>
+      </ion-item>
+      <p *ngIf="authForm.controls.tel.hasError('required') && authForm.controls.tel.touched">จำเป็นต้องกรอกรหัสผ่าน!</p>
+      <p *ngIf="authForm.controls.tel.hasError('pattern') && authForm.controls.tel.touched">เฉพาะตัวเลขเท่านั้น!</p>
+      <p *ngIf="authForm.controls.tel.hasError('minlength') && authForm.controls.tel.touched">ตัวเลข 10 หลักเท่านั้น!</p>
+      <p *ngIf="authForm.controls.tel.hasError('maxlength') && authForm.controls.tel.touched">ตัวเลข 10 หลักเท่านั้น!</p>
+
+
+      <ion-item [ngClass]="{'error-border':!authForm.controls.address.valid && authForm.controls.address.touched}">
+        <ion-label fixed class='fixedLabel'>
+          ที่อยู่
+        </ion-label>
+        <ion-input formControlName="address" type="text" value="{{student.address}}" [(ngModel)]="updateStudent.address"></ion-input>
+      </ion-item>
+      <p *ngIf="authForm.controls.address.hasError('required') && authForm.controls.address.touched">จำเป็นต้องกรอกที่อยู่!</p>
+    </ion-list>
+    <button ion-button round color="primary" [disabled]="!authForm.valid" type="submit" class="save" >บันทึก</button>
+  </form>
+  <br>
+  <button ion-button round color="danger" style="margin-top: 20px;width:140px;" (click)="logout()">ออกจากระบบ</button>
+
+</ion-content>

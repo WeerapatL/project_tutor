@@ -1,0 +1,24 @@
+<!--
+  Generated template for the HistBookPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="school">
+    <ion-title>ประวัติ</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let history of getHistory">
+      {{showSubjectName(history.courseId)}}
+      <!-- {{history.time}} -->
+      <ion-icon (click)="popoverTime(history.round)" name="list-box"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

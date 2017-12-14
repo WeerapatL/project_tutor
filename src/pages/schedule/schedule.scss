@@ -1,0 +1,55 @@
+page-schedule {
+   ion-select {
+        display:flex;
+        overflow: hidden;
+        max-width: 100% !important;
+   }
+
+    .button{
+       width: 70%;
+       height: 50px;
+       font-size: 1.8rem;
+       
+    }
+
+    ion-title {
+       font-size: 2.5rem;
+    }
+
+    .card{
+       text-align: center;
+       font-weight: bold;
+    }
+
+    ion-label{
+       font-size: 1.8rem;
+    }
+    
+
+    $COLORSCHOOL:rgb(48, 84, 184);;
+    $SHADOW:0 5px 5px 3px rgba(50,50,50,.4);
+
+    .book.button-ios{
+        width: 70%;
+        font-size: 1.8rem;
+        color: #fff;
+        background-color: $COLORSCHOOL;
+        box-shadow: $SHADOW;
+    }
+    
+    .book.button-md {
+        width: 70%;
+        height: 5rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+        background-color: $COLORSCHOOL;
+        box-shadow: $SHADOW;
+    }
+
+    page-schedule .card {
+        background: whitesmoke;
+    }
+
+}

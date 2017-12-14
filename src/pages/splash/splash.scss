@@ -1,0 +1,51 @@
+page-splash {
+    ion-content{
+        background: url("../assets/imgs/e64.jpg") no-repeat center;
+   
+      }
+
+      .create{   
+        color: black;
+        width: 80%;
+        letter-spacing: 1.5px;
+        background-color:rgb(53, 226, 71);
+        margin-top: 90px;
+        font-weight: bolder;
+        font-size: 20px;
+       }
+
+       .logon{  
+        color: black;
+        width: 80%;
+        letter-spacing: 1.5px;
+        background-color:white;
+        margin-top: 7px;
+        font-weight: bolder;
+        font-size: 20px;
+        
+        }
+
+        .or{
+            color: black;
+            margin-top: 7px;
+            font-size: 25px;
+            font-weight: 800;        
+        }
+
+        page-splash .logon {
+            color: black;
+            width: 80%;
+            letter-spacing: 1.5px;
+            background-color: white;
+            margin-top: 7px;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        .button-md {
+            font-weight: bolder;
+            font-size: 20px;
+            height: 5rem;
+        }
+
+}

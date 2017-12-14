@@ -1,0 +1,32 @@
+page-logon {
+    p{
+        color: red !important;
+    }
+    // ion-content{
+    //     background: url("../assets/imgs/e64.jpg") no-repeat center;
+
+    // }
+
+    .padding{
+        margin: auto auto;
+        width: 100%;
+        color: black;
+        opacity: 0.9;
+        border-style: inset;
+        border-radius: 5px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .login{
+        font-weight: 900;   
+        color: black;
+        width: 50%;
+        letter-spacing: 1.5px;
+        background-color:#4BD35A;
+        margin-top: 20px;
+
+        
+    }
+
+}

@@ -1,0 +1,30 @@
+page-register {
+ p{
+     color: red !important;
+    //  text-decoration-color: red;
+ }
+
+ .padding{
+    margin: auto auto;
+    width: 100%;
+    color: black;
+    opacity: 0.9;
+    // border-color: black;
+    border-style: inset;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+}
+
+.label-ios[stacked] {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.create{
+    margin-top: 20px;
+    width:200px;
+    font-size:20px
+}
+}

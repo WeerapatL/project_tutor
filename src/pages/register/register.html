@@ -1,0 +1,86 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="school">
+    <ion-title>สร้างบัญชี</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding text-center>
+  <form [formGroup]="authForm" (ngSubmit)="onSubmit(authForm.value)">
+    <!-- <ion-list > -->
+    <ion-item no-lines [ngClass]="{'error-border':!authForm.controls.username.valid && authForm.controls.username.touched}">
+      <ion-label stacked>ชื่อบัญชี :</ion-label>
+      <ion-input class="padding" formControlName="username" type="text" placeholder="     กรอกชื่อผู้ใช้" [(ngModel)]="student.username"></ion-input>
+    </ion-item>   
+      <p *ngIf="authForm.controls.username.hasError('required') && authForm.controls.username.touched">จำเป็นต้องกรอกชื่อผู้ใช้!</p>
+      <p *ngIf="authForm.controls.username.hasError('pattern') && authForm.controls.username.touched">เฉพาะตัวอักษร และ ตัวเลขเท่านั้น!</p>
+      <p *ngIf="authForm.controls.username.hasError('minlength') && authForm.controls.username.touched">ชื่อผู้ใช้อย่างน้อย 6 ตัว!</p>
+      <p *ngIf="authForm.controls.username.hasError('maxlength') && authForm.controls.username.touched">ชื่อผู้ใช้ต้องไม่เกิน 20 ตัว!</p>
+   
+
+    <ion-item no-lines [ngClass]="{'error-border':!authForm.controls.password.valid && authForm.controls.password.touched}">
+      <ion-label stacked>รหัสผ่าน :</ion-label>
+      <ion-input class="padding" formControlName="password" type="password" placeholder="     กรอกรหัสผ่าน" [(ngModel)]="student.password"></ion-input>
+    </ion-item> 
+      <p *ngIf="authForm.controls.password.hasError('required') && authForm.controls.password.touched">จำเป็นต้องกรอกรหัสผ่าน!</p>
+      <p *ngIf="authForm.controls.password.hasError('minlength') && authForm.controls.password.touched">รหัสผ่านอย่างน้อย 6 ตัว!</p>
+    
+
+    <ion-item no-lines [ngClass]="{'error-border':!authForm.controls.repassword.valid && authForm.controls.repassword.touched}">
+      <ion-label stacked>รหัสผ่านอีกครั้ง :</ion-label>
+      <ion-input class="padding" formControlName="repassword" type="password" placeholder="     กรอกรหัสผ่านอีกครั้ง"></ion-input>
+    </ion-item>
+      <p *ngIf="authForm.controls.repassword.hasError('required') && authForm.controls.repassword.touched">จำเป็นต้องกรอกรหัสผ่านอีกครั้ง!</p>
+      <p *ngIf="authForm.controls.repassword.value != authForm.controls.password.value && authForm.controls.repassword.touched">รหัสผ่านไม่ตรงกัน!</p>
+    
+
+    <ion-item no-lines [ngClass]="{'error-border':!authForm.controls.firstname.valid && authForm.controls.firstname.touched}">
+      <ion-label stacked>ชื่อจริง :</ion-label>
+      <ion-input class="padding" formControlName="firstname" type="text" placeholder="     กรอกชื่อจริง" [(ngModel)]="student.fname"></ion-input>
+    </ion-item>
+      <p *ngIf="authForm.controls.firstname.hasError('required') && authForm.controls.firstname.touched">จำเป็นต้องกรอกชื่อจริง!</p>
+      <p *ngIf="authForm.controls.firstname.hasError('pattern') && authForm.controls.firstname.touched">เฉพาะตัวอักษรภาษาอังกฤษเท่านั้น!</p>
+    
+
+    <ion-item no-lines [ngClass]="{'error-border':!authForm.controls.lastname.valid && authForm.controls.lastname.touched}">
+      <ion-label stacked>นามสกุล :</ion-label>
+      <ion-input class="padding" formControlName="lastname" type="text" placeholder="     กรอกนามสกุล" [(ngModel)]="student.lname"></ion-input>
+    </ion-item>
+      <p *ngIf="authForm.controls.lastname.hasError('required') && authForm.controls.lastname.touched">จำเป็นต้องกรอกนามสกุล!</p>
+      <p *ngIf="authForm.controls.lastname.hasError('pattern') && authForm.controls.lastname.touched">เฉพาะตัวอักษรภาษาอังกฤษเท่านั้น!</p>
+    
+
+    <ion-item no-lines [ngClass]="{'error-border':!authForm.controls.email.valid && authForm.controls.email.touched}">
+      <ion-label stacked>Email :</ion-label>
+      <ion-input class="padding" formControlName="email" type="text" placeholder="     กรอก Email" [(ngModel)]="student.email"></ion-input>
+    </ion-item>   
+      <p *ngIf="authForm.controls.email.hasError('required') && authForm.controls.email.touched">จำเป็นต้องกรอก Email!</p>
+      <p *ngIf="authForm.controls.email.hasError('pattern') && authForm.controls.email.touched">ตัวอย่าง: john@doe.com</p>
+  
+
+    <ion-item no-lines [ngClass]="{'error-border':!authForm.controls.tel.valid && authForm.controls.tel.touched}">
+      <ion-label stacked>เบอร์โทร :</ion-label>
+      <ion-input class="padding" formControlName="tel" type="text" placeholder="     กรอกเบอร์โทร" [(ngModel)]="student.tel"></ion-input>
+    </ion-item>
+      <p *ngIf="authForm.controls.tel.hasError('required') && authForm.controls.tel.touched">จำเป็นต้องกรอกรหัสผ่าน!</p>
+      <p *ngIf="authForm.controls.tel.hasError('pattern') && authForm.controls.tel.touched">เฉพาะตัวเลขเท่านั้น!</p>
+      <p *ngIf="authForm.controls.tel.hasError('minlength') && authForm.controls.tel.touched">ตัวเลข 10 หลักเท่านั้น!</p>
+      <p *ngIf="authForm.controls.tel.hasError('maxlength') && authForm.controls.tel.touched">ตัวเลข 10 หลักเท่านั้น!</p>
+    
+
+    <ion-item no-lines [ngClass]="{'error-border':!authForm.controls.address.valid && authForm.controls.address.touched}">
+      <ion-label stacked>ที่อยู่ :</ion-label>
+      <ion-input class="padding" formControlName="address" type="text" placeholder="     กรอกที่อยู่" [(ngModel)]="student.address"></ion-input>
+    </ion-item> 
+      <p *ngIf="authForm.controls.address.hasError('required') && authForm.controls.address.touched">จำเป็นต้องกรอกที่อยู่!</p>
+    
+
+    <!-- </ion-list> -->
+    <button ion-button round color="primary" [disabled]="!authForm.valid" class="create" type="submit">สร้าง</button>
+  </form>
+</ion-content>

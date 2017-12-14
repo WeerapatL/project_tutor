@@ -1,0 +1,70 @@
+<ion-header>
+
+  <ion-navbar color="school">
+    <ion-title>จองเวลาเรียน</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="tutorial()">
+        <ion-icon name="information-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+
+</ion-header>
+
+<ion-content padding>
+  
+
+  <ion-list-header no-lines>
+    เลือกสาขา
+  </ion-list-header>
+  <ion-item>
+    <ion-label>
+    </ion-label>
+    <ion-select [(ngModel)]="branchId" multiple="false">
+      <ion-option *ngFor="let branch of getBranchs" value="{{branch.$key}}">
+        {{branch.branchName}}
+      </ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-list-header no-lines>
+    เลือกคอร์ส
+  </ion-list-header>
+  <ion-item>
+    <ion-label>
+    </ion-label>
+    <ion-select [(ngModel)]="selectCourse" (ionChange)="showTime($event)" multiple="false" >
+      <ion-option *ngFor="let course of getCourseStu" value="{{course.$key}}">
+        {{course.courseId}}&nbsp;&nbsp;{{course.CourseName}}
+      </ion-option>
+    </ion-select>
+  </ion-item>
+
+
+  <ion-list-header no-lines>
+    เลือกเวลาเรียน
+  </ion-list-header>
+  <ion-item text-center (click)="selectRound(branchId)">
+    <ion-buttons>
+      <button class="button" ion-button round color="secondary">เลือกเวลา</button>
+    </ion-buttons>
+    <ion-item text-center no-lines *ngFor="let time of getSelectedRound">
+      {{time}}
+    </ion-item>
+  </ion-item>
+ 
+
+  <ion-card>
+    <br>
+    <ion-title>จอง&nbsp;&nbsp;{{showSelectedHr()}}&nbsp;ชั่วโมง</ion-title>
+    <br>
+    <ion-title>เหลือ&nbsp;&nbsp;{{amountTime}}&nbsp;ชั่วโมง</ion-title>
+    <br>
+  </ion-card>
+  <ion-buttons  text-center>
+    <button class="book" ion-button round (click)="confirm()">
+      จอง
+    </button>
+  </ion-buttons>
+</ion-content>

@@ -1,0 +1,66 @@
+<!--
+  Generated template for the QuestionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header style="text-align: center;">
+	<ion-navbar color="school">
+		<button end ion-button menuToggle>
+			<ion-icon name="md-more"></ion-icon>
+		</button>
+		<ion-title>ถาม-ตอบ</ion-title>
+	</ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+	<div #scrollMe style="overflow: auto; height: 100%;">
+		<ion-list no-lines style="margin-right: -5%;">
+			<ion-item *ngFor="let chat of chats | async" class="positionChat">
+				<ion-label style="color:#0B2161">
+					<span style="font-size:15px">
+						<b>{{chat.username}} :</b>
+					</span>
+					<span class="nameCoinsSet">{{chat.messages}}
+						<br>
+						<div *ngIf="chat.Photo.length>1">
+							<img src="{{chat.Photo}}">
+						</div>
+					</span>
+				</ion-label>
+			</ion-item>
+		</ion-list>
+	</div>
+
+</ion-content>
+<ion-footer>
+	<ion-toolbar color="bgToolbar">
+		<span class="username">
+			<b>{{name}} </b>
+		</span>
+		<br>
+		<form [formGroup]="sendMessage">
+			<input placeholder="ข้อความของคุณ..." [(ngModel)]="message" formControlName="message" />
+
+			<button (click)="sendMsg()">
+				<ion-icon name="send"></ion-icon>
+			</button>
+			&nbsp;&nbsp;&nbsp;
+			<button end (click)="editPhoto()">
+				<ion-icon name="camera"></ion-icon>
+			</button>
+
+		</form>
+
+		<div *ngIf="pathPhoto.length>1" text-center>
+			<ion-buttons (click)="clear()">
+				<button icon-only>
+					<ion-icon name="close"></ion-icon>
+					<img src="{{pathPhoto}}" />
+				</button>
+			</ion-buttons>
+		</div>
+		<span class="error"> {{errorMessage}} </span>
+	</ion-toolbar>
+</ion-footer>

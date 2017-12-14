@@ -1,0 +1,30 @@
+page-course-detail {
+    .right{
+        text-align: right ;
+    }
+
+    $COLORSCHOOL:rgb(48, 84, 184);
+    $SHADOW:0 5px 5px 3px rgba(50,50,50,.4);
+
+    .button-ios{
+        width: 70%;
+        font-size: 1.8rem;
+        color: #fff;
+        background-color: $COLORSCHOOL;
+        box-shadow: $SHADOW;
+    }
+    
+    .button-md {
+        width: 70%;
+        height: 5rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+        background-color: $COLORSCHOOL;
+        box-shadow: $SHADOW;
+    }
+    
+    
+
+}
